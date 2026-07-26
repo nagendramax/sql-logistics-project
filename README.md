@@ -40,6 +40,7 @@ erDiagram
         date delivery_date
         int driver_id FK
     }
+    ```
 
 ## 🔍 Key Business Insights & Queries
 Here are examples of operational questions answered using SQL:
