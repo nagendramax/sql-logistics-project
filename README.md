@@ -14,6 +14,8 @@ This project tracks shipments, drivers, delivery statuses, and shipping costs to
 * **Shipments Table:** Stores tracking details, origin/destination cities, weights, costs, statuses, and foreign keys linked to drivers.
 
 ## 📐 Entity-Relationship (ER) Diagram
+## 📐 Entity-Relationship (ER) Diagram
+
 ```mermaid
 erDiagram
     DRIVERS ||--o{ SHIPMENTS : handles
