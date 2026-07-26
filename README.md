@@ -14,9 +14,8 @@ This project tracks shipments, drivers, delivery statuses, and shipping costs to
 * **Shipments Table:** Stores tracking details, origin/destination cities, weights, costs, statuses, and foreign keys linked to drivers.
 
 ## 📐 Entity-Relationship (ER) Diagram
-## 📐 Entity-Relationship (ER) Diagram
 
-```mermaid
+mermaid
 erDiagram
     DRIVERS ||--o{ SHIPMENTS : handles
     
@@ -40,7 +39,7 @@ erDiagram
         date delivery_date
         int driver_id FK
     }
-    ```
+    
 
 ## 🔍 Key Business Insights & Queries
 Here are examples of operational questions answered using SQL:
