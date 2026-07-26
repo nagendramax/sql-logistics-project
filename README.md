@@ -13,34 +13,6 @@ This project tracks shipments, drivers, delivery statuses, and shipping costs to
 * **Drivers Table:** Stores employee contact info and hire dates.
 * **Shipments Table:** Stores tracking details, origin/destination cities, weights, costs, statuses, and foreign keys linked to drivers.
 
-## 📐 Entity-Relationship (ER) Diagram
-
-mermaid
-erDiagram
-    DRIVERS ||--o{ SHIPMENTS : handles
-    
-    DRIVERS {
-        int driver_id PK
-        string first_name
-        string last_name
-        string phone_number
-        date hire_date
-    }
-    
-    SHIPMENTS {
-        int shipment_id PK
-        string tracking_number UK
-        string origin_city
-        string destination_city
-        decimal weight_kg
-        decimal shipping_cost
-        string status
-        date dispatch_date
-        date delivery_date
-        int driver_id FK
-    }
-    
-
 ## 🔍 Key Business Insights & Queries
 Here are examples of operational questions answered using SQL:
 1. **Active Tracking:** Filtering shipments currently *In Transit* or *Delayed*.
